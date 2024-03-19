@@ -44,5 +44,12 @@ strategy:
       imageName: "windows-latest"
   maxParallel: 3
 
+schedules:
+  - cron: '0 12 * * 0'
+    displayName: Weekly Sunday build
+    branches:
+      include:
+      - releases/*
+    always: true
 
   
