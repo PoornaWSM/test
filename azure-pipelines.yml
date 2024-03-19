@@ -45,8 +45,8 @@ strategy:
   maxParallel: 3
 
 schedules:
-  - cron: '0 12 * * 0'
-    displayName: Weekly Sunday build
+  - cron: '0 0 * * *'
+    displayName: Daily Midnight build
     branches:
       include:
       - releases/*
